@@ -387,7 +387,6 @@ class BenchmarkSet:
             configuration = configuration.get_dictionary()
 
         # Re-order:
-        self.config_space._sort_hyperparameters()
         configuration = configuration.copy()
         configuration = {
             k: configuration.get(k)
